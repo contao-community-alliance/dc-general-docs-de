@@ -1,0 +1,92 @@
+Textgestaltung:
+
+Der Text sollte in einer neutralen Ansprache des Lesers erfolgen - üblicher
+Weise mit "man".
+
+Bitte Schachtelsätze vermeiden und längere Absätze in logische Blöcke unterteilen.
+
+
+Anmerkungen zur Arbeit mit Sphinx:
+
+Doku:
+http://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+
+Online-Editor:
+http://rst.ninjs.org/
+
+Online Tabellengenerator:
+http://www.tablesgenerator.com/markdown_tables
+http://truben.no/table/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tools:
+
+Testdaten-Generator:
+http://www.generatedata.com/#generator
+
+SQL:
+Zufallszahlen:
+FLOOR(RAND() * (<max> - <min> + 1)) + <min>
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Hinweise für das Dokument:
+
+interne Verlinkungen:
+
+oberhalb der zu verlinkenden Überschrift
+.. _rst_features:
+
+als Link einfügen z.B. per
+:ref:`rst_features`
+
+oder mit eigenem Linktext
+:ref:`Neue Funktionen <rst_features>`
+
+Bei den neueren Verlinkungen habe ich die Form <dateiname>_<überschrift-mit-bindestrich> gewählt - z.B.
+.. _introdution_was-ist-metamodels:
+
+
+externe Verlinkungen:
+`Google <https://www.google.de>`_
+offensichtlich gibt es keine Möglichkeit das Attribut "target" anzugeben :-(
+
+
+Überschriften:
+
+H1 Überschrift
+==============
+
+H2 Überschrift
+--------------
+
+H3 Überschrift
+..............
+
+
+Tabellen:
+http://www.tablesgenerator.com/markdown_tables
+
+
+Bilder:
+Im Text per "Ersetungstoken" z.B. Lorem ipsum |img_filter| bla bla...
+
+und unten 
+.. |img_filter| image:: /_img/filter.png
+
+
+Hinweise:
+.. warning:: 
+.. note::
+
+
+HTML-Sonderzeichen usw.:
+per "Ersetungstoken" z.B. kostet 2.000 |nbsp| EUR
+
+.. |nbsp| unicode:: 0xA0 
+   :trim:
+   
+.. |br| raw:: html
+
+   <br />
