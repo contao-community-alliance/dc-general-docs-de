@@ -12,7 +12,7 @@ sich der DC_Table um die Anzeige der Daten im Backend z.B. für die Listenansich
 
 Der aktuelle DC_Table ist im Verlauf seiner Entwicklung zu einem
 recht "monolithischem Gebilde" herangewachsen, so dass die Erweiterung und Modernisierung sehr schwierig 
-bis unmöglich ist. Zudem ist es nicht möglich, den Code per `Unittest <https://phpunit.de/`_ zu prüfen.
+bis unmöglich ist. Zudem ist es nicht möglich, den Code per `Unittest <https://phpunit.de/>`_ zu prüfen.
 
 Aufgrund dieser Schwierigkeiten wurde der `DC_General <https://github.com/contao-community-alliance/dc-general>`_
 als moderner "Data container" entwickelt und nutzt die Möglichkeiten, die sich aus einer modernen OOP
