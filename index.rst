@@ -5,26 +5,37 @@ Dies ist die offizielle Dokumentation des `DC_General <https://github.com/contao
 eine Erweiterung für das `Contao CMS <https://contao.org>`_.
 
 Mit der Erweiterung DC_General ist eine Alternative für den im Contao-Core enthaltenen DC_Table. Der
-DC_Table ist für ... zuständig. Der aktuelle DC_Table hat sich im Verlauf seiner Entwicklung zu einem
-recht "monolithischem Gebilde" herangewachsen, so dass die Erweiterung und Modernisierung sehr schwierig 
-bis unmöglich ist.
+`DC_Table <https://github.com/contao/core-bundle/blob/master/src/Resources/contao/drivers/DC_Table.php>`_
+ist als "Driver" in erster Linie für die Datenmanipulation wie z.B. Datensatz speichern, kopieren und
+löschen zuständig - zudem ist im DC_Table auch das Mehrfachbearbeiten implementiert. Weiterhin kümmert
+sich der DC_Table um die Anzeige der Daten im Backend z.B. für die Listenansichten oder die Eingabemasken.
 
-Aufgrund dieser Schwierigkeiten wurde der DC_General als moderner "Data container" entwickelt und nutzt
-die Möglichkeiten, die sich aus einer modernen OOP sowie dem Einsatz von Symfony ergeben, bestens aus.
+Der aktuelle DC_Table ist im Verlauf seiner Entwicklung zu einem
+recht "monolithischem Gebilde" herangewachsen, so dass die Erweiterung und Modernisierung sehr schwierig 
+bis unmöglich ist. Zudem ist es nicht möglich, den Code per `Unittest <https://phpunit.de/`_ zu prüfen.
+
+Aufgrund dieser Schwierigkeiten wurde der `DC_General <https://github.com/contao-community-alliance/dc-general>`_
+als moderner "Data container" entwickelt und nutzt die Möglichkeiten, die sich aus einer modernen OOP
+sowie dem Einsatz von Symfony ergeben, bestens aus. Der DC_General ist gegenüber dem DC_Table `"Event driven"
+<https://easysolutionsit.de/artikel/ck2018-event-driven-development.html>`_, hat eine Abstraktion der Datenquelle
+sowie eine verbesserte Konfiguration der Abhängigkeiten zwischen Datacontainers.
 
 Wird der DC_General in eigene Erweiterungen implementiert stehen vielfältige Manipulationsmöglichkeiten
-für das Contao-Backend wie z.B. ... zur Verfügung. Mehr zu den zu den Funktionen unter...
+für die Daten und das Contao-Backend über Events zur Verfügung. Mehr zu den zu den Funktionen unter...
 
-Der DC_General ist in einigen großen Erweiterungen wie `MetaModels <https://github.com/MetaModels>`_
-oder `Avisota <https://github.com/avisota>`_ implementiert. Die gängige Abkürzung für den DC_General ist 'DCG'.
+Der DC_General ist in einigen großen Erweiterungen wie `MetaModels <https://github.com/MetaModels>`_,
+`Avisota <https://github.com/avisota>`_ oder `Language2File <http://menatwork.github.io/language-doku/>`_
+implementiert.
+
+Die gängige Abkürzung für den DC_General ist 'DCG'.
 
 Diese Dokumentation gliedert sich in drei Bereiche:
 
     :ref:`index_manual` - Hier werden generelle Sachen des DCG dokumentiert.
 
-    :ref:`index_reference` - Dokumentation über Events, Schnittstellen und vielem mehr.
-
     :ref:`index_cookbook` - Workflows und 'Best practice'-Beispiele um mit dem DCG zu arbeiten.
+
+    :ref:`index_reference` - Dokumentation über Events, Schnittstellen und vielem mehr.
 
 
 Unterstützung und Spenden
@@ -48,6 +59,15 @@ Handbuch
 
 .. _index_reference:
 
+Kochbuch
+--------
+
+    .. toctree::
+        :glob:
+        :maxdepth: 1
+
+        cookbook/*
+
 Referenz
 --------
 
@@ -60,14 +80,6 @@ Referenz
 
 .. _index_cookbook:
 
-Kochbuch
---------
-
-    .. toctree::
-        :glob:
-        :maxdepth: 1
-
-        cookbook/*
 
 
 Indizes und Tabellen
