@@ -81,9 +81,3 @@ Referenz
 .. _index_cookbook:
 
 
-
-Indizes und Tabellen
-====================
-
-* :ref:`genindex`
-
