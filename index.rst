@@ -24,7 +24,7 @@ Wird der DC_General in eigene Erweiterungen implementiert stehen vielfältige Ma
 für die Daten und das Contao-Backend über Events zur Verfügung. Mehr zu den zu den Funktionen unter...
 
 Der DC_General ist in einigen großen Erweiterungen wie `MetaModels <https://github.com/MetaModels>`_,
-`Avisota <https://github.com/avisota>`_ oder `Language2File <http://menatwork.github.io/language-doku/>`_
+`Avisota <https://github.com/avisota>`_, `syncCto <http://www.contao-synccto.de>`_ oder `Language2File <http://menatwork.github.io/language-doku>`_
 implementiert.
 
 Die gängige Abkürzung für den DC_General ist 'DCG'.
