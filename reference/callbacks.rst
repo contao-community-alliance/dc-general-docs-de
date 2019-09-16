@@ -16,13 +16,15 @@ Ersetzung hat:
 Callback in ``config``
 ----------------------
 
+|----------|-------|
 | Callback | Event |
-| -------- | ----- |
+|==========|=======|
 | onload_callback | dc-general.factory.create-dc-general  |
 | onsubmit_callback | dc-general.model.post-persist  |
 | ondelete_callback | dc-general.model.post-delete  |
 | oncut_callback | dc-general.model.post-paste  |
 | oncopy_callback | dc-general.model.post-duplicate  |
+|----------|-------|
 
 
 Callback in ``list/sorting``
