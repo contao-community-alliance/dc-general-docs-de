@@ -38,7 +38,7 @@ Der Knoten ``ctable`` für Kindtabellen ist nicht notwendig und wird dafür im K
 Die Callbacks könnten wie gehabt in ``config`` eingetragen werden und werden von dem
 DCG-Legacy-Builder mit in die Abarbeitung übernommen - besser ist es,
 die Aufgaben einen entsprechenden Event-Listener zu übergeben (siehe
-`reference_callbacks`_).
+:ref:`reference_callbacks`).
 
 Der Standard-Datenprovider (Datentabelle) wird Knoten ``data_provider``
 in ``data_provider`` angegeben.
