@@ -135,6 +135,12 @@ definiert.
            ),
            ...
 
+Der Knoten ``setOn`` definiert die Relation zwischen Eltern- zu
+Kindtabelle.
+
+Der Knoten ``filter`` definiert ein Array von möglichen Filterungen,
+um die Kinddatensätze einzugrenzen - eine Filterung ist Pflicht.
+
 Der Knoten ``inverse`` ist optional, aber beschleunigt
 die Datenbankabfrage für eine Abfrage vom Kind- zur Elterntabelle.
 
