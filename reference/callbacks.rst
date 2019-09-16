@@ -34,47 +34,65 @@ Callback in ``config``
 Callback in ``list/sorting``
 ----------------------------
 
-| Callback | Event |
-| -------- | ----- |
-| header_callback | dc-general.view.contao2backend.get-parent-header  |
-| paste_button_callback | dc-general.view.contao2backend.get-paste-root-button  |
-| paste_button_callback | dc-general.view.contao2backend.get-paste-button  |
-| child_record_callback | dc-general.view.contao2backend.parent-view-child-record  |
++-----------------------+---------------------------------------------------------+
+| Callback              | Event                                                   |
++=======================+=========================================================+
+| header_callback       | dc-general.view.contao2backend.get-parent-header        |
++-----------------------+---------------------------------------------------------+
+| paste_button_callback | dc-general.view.contao2backend.get-paste-root-button    |
++-----------------------+---------------------------------------------------------+
+| paste_button_callback | dc-general.view.contao2backend.get-paste-button         |
++-----------------------+---------------------------------------------------------+
+| child_record_callback | dc-general.view.contao2backend.parent-view-child-record |
++-----------------------+---------------------------------------------------------+
 
 
 Callback in ``list/label``
 --------------------------
 
-| Callback | Event |
-| -------- | ----- |
-| group_callback | dc-general.view.contao2backend.get-group-header  |
-| label_callback | dc-general.view.contao2backend.model-to-label  |
++----------------+-------------------------------------------------+
+| Callback       | Event                                           |
++================+=================================================+
+| group_callback | dc-general.view.contao2backend.get-group-header |
++----------------+-------------------------------------------------+
+| label_callback | dc-general.view.contao2backend.model-to-label   |
++----------------+-------------------------------------------------+
 
 
 Callback in ``list/global_operations``
 --------------------------------------
 
-| Callback | Event |
-| -------- | ----- |
-| button_callback | dc-general.view.contao2backend.get-global-button  |
++-----------------+--------------------------------------------------+
+| Callback        | Event                                            |
++=================+==================================================+
+| button_callback | dc-general.view.contao2backend.get-global-button |
++-----------------+--------------------------------------------------+
 
 
 Callback in ``list/operations``
 -------------------------------
 
-| Callback | Event |
-| -------- | ----- |
-| button_callback | dc-general.view.contao2backend.get-global-button  |
++-----------------+--------------------------------------------------+
+| Callback        | Event                                            |
++=================+==================================================+
+| button_callback | dc-general.view.contao2backend.get-global-button |
++-----------------+--------------------------------------------------+
 
 
 Callback in ``fields``
 ----------------------
 
-| Callback | Event |
-| -------- | ----- |
-| load_callback | dc-general.view.contao2backend.decode-property-value-for-widget  |
-| save_callback | dc-general.view.contao2backend.encode-property-value-from-widget  |
-| options_callback | dc-general.view.contao2backend.get-property-options  |
-| input_field_callback | dc-general.view.contao2backend.build-widget  |
-| wizard | dc-general.view.contao2backend.manipulate-widget  |
++----------------------+------------------------------------------------------------------+
+| Callback             | Event                                                            |
++======================+==================================================================+
+| load_callback        | dc-general.view.contao2backend.decode-property-value-for-widget  |
++----------------------+------------------------------------------------------------------+
+| save_callback        | dc-general.view.contao2backend.encode-property-value-from-widget |
++----------------------+------------------------------------------------------------------+
+| options_callback     | dc-general.view.contao2backend.get-property-options              |
++----------------------+------------------------------------------------------------------+
+| input_field_callback | dc-general.view.contao2backend.build-widget                      |
++----------------------+------------------------------------------------------------------+
+| wizard               | dc-general.view.contao2backend.manipulate-widget                 |
++----------------------+------------------------------------------------------------------+
 
