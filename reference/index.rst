@@ -1,3 +1,5 @@
+.. _reference:
+
 DCG Referenz
 ============
 
@@ -7,4 +9,6 @@ Die Referenzen sind für Entwickler gedacht, die Funktionen aus dem DCG nutzen m
         :maxdepth: 2
 
         api
+        events
+        callbacks
 
