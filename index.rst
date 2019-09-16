@@ -55,6 +55,7 @@ Handbuch
 
         manual/introduction
         manual/install
+        manual/data-container
 
 
 .. _index_reference:
