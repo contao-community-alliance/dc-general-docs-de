@@ -17,9 +17,27 @@ DCG per ``General`` umgestellt.
        'config' => array
        (
            // Replace the data container Table with General.
-           'dataContainer'               => 'General'
+           'dataContainer'    => 'General'
+           'notCopyable'      => true, // wird erst ab DCG 2.2 untertützt
+           'enableVersioning' => true, // wird erst ab DCG 2.2 untertützt
+           'sql' => array
+           (
+               'keys' => array
+               (
+                   'id' => 'primary'
+               )
+           )
+           // *_callback per Event
        ),
        ...
+
+Die übrigen, möglichen Parameter bei ``config`` können wie bei DC_Table eingesetzt werden.
+Der Knoten ``ctable`` für Kindtabellen ist nicht notwendig und wird dafür im Knoten
+``data_provider`` behandelt (s.u.).
+
+Die Callbacks könnten wie gehabt in ``config`` eingetragen werden und werden auch 
+von einem Legacy-Builder mit in den DCG in die Abarbeitung übernommen - besser ist es,
+die Aufgaben einen entsprechenden Event-Listener zu übergeben.
 
 Der Standard-Datenprovider (Datentabelle) wird Knoten ``data_provider``
 in ``data_provider`` angegeben.
