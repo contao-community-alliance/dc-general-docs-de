@@ -14,7 +14,8 @@ Folgend eine Auflistung, welcher Callback mit welchem Event seine
 Ersetzung hat:
 
 Callback in ``config``
-----------------------------
+----------------------
+
 | Callback | Event |
 | -------- | ----- |
 | onload_callback | dc-general.factory.create-dc-general  |
@@ -23,8 +24,10 @@ Callback in ``config``
 | oncut_callback | dc-general.model.post-paste  |
 | oncopy_callback | dc-general.model.post-duplicate  |
 
+
 Callback in ``list/sorting``
 ----------------------------
+
 | Callback | Event |
 | -------- | ----- |
 | header_callback | dc-general.view.contao2backend.get-parent-header  |
@@ -32,27 +35,35 @@ Callback in ``list/sorting``
 | paste_button_callback | dc-general.view.contao2backend.get-paste-button  |
 | child_record_callback | dc-general.view.contao2backend.parent-view-child-record  |
 
+
 Callback in ``list/label``
 --------------------------
+
 | Callback | Event |
 | -------- | ----- |
 | group_callback | dc-general.view.contao2backend.get-group-header  |
 | label_callback | dc-general.view.contao2backend.model-to-label  |
 
+
 Callback in ``list/global_operations``
 --------------------------------------
+
 | Callback | Event |
 | -------- | ----- |
 | button_callback | dc-general.view.contao2backend.get-global-button  |
+
 
 Callback in ``list/operations``
 -------------------------------
+
 | Callback | Event |
 | -------- | ----- |
 | button_callback | dc-general.view.contao2backend.get-global-button  |
 
+
 Callback in ``fields``
 ----------------------
+
 | Callback | Event |
 | -------- | ----- |
 | load_callback | dc-general.view.contao2backend.decode-property-value-for-widget  |
