@@ -35,8 +35,8 @@ Die übrigen, möglichen Parameter bei ``config`` können wie bei DC_Table einge
 Der Knoten ``ctable`` für Kindtabellen ist nicht notwendig und wird dafür im Knoten
 ``data_provider`` behandelt (s.u.).
 
-Die Callbacks könnten wie gehabt in ``config`` eingetragen werden und werden auch 
-von einem Legacy-Builder mit in den DCG in die Abarbeitung übernommen - besser ist es,
+Die Callbacks könnten wie gehabt in ``config`` eingetragen werden und werden von dem
+DCG-Legacy-Builder mit in die Abarbeitung übernommen - besser ist es,
 die Aufgaben einen entsprechenden Event-Listener zu übergeben.
 
 Der Standard-Datenprovider (Datentabelle) wird Knoten ``data_provider``
@@ -134,6 +134,71 @@ definiert.
                )
            ),
            ...
+
+Der Knoten ``inverse`` ist optional, aber beschleunigt
+die Datenbankabfrage für eine Abfrage vom Kind- zur Elterntabelle.
+
+Die Konfiguration für eine Kindtabelle ist analog der Elterntabelle.
+Beim ``data_provider`` wird statt ``default`` die Tabelle für ``parent``
+angegeben.
+
+.. code-block:: yaml
+
+   $GLOBALS['TL_DCA']['tl_my_child'] = array
+   (
+       // Config
+       'config' => array
+       (
+           'dataContainer'               => 'General',
+       ),
+       // Add the data container configuration.
+       'dca_config' => array
+       (
+           // Configure the data provider and all child data provider.
+           'data_provider' => array
+           (
+               // The default data provider, for this data container.
+               'parent' => array
+               (
+                   'source' => 'tl_my_table'
+               )
+           ),
+           // Add the child condition. This will announce the relations.
+           'childCondition' => array
+           (
+               array
+               (
+                   'from'    => 'tl_my_table',
+                   'to'      => 'tl_my_child',
+                   'setOn'   => array
+                   (
+                       array
+                       (
+                           'to_field'   => 'pid',
+                           'from_field' => 'id',
+                       ),
+                   ),
+                   'filter'  => array
+                   (
+                       array
+                       (
+                           'local'     => 'pid',
+                           'remote'    => 'id',
+                           'operation' => '=',
+                       ),
+                   ),
+                   'inverse' => array
+                   (
+                       array
+                       (
+                           'local'     => 'pid',
+                           'remote'    => 'id',
+                           'operation' => '=',
+                       ),
+                   )
+               )
+           )
+       ),
 
 Die übrigen Parameter im DCA werden analog dem üblichen Vorgehen
 wie bei einem "DC_Table-Projekt" vorgenommen. Die Einstellungen
