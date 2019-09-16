@@ -57,8 +57,7 @@ Handbuch
         manual/install
         manual/data-container
 
-
-.. _index_reference:
+.. _index_cookbook:
 
 Kochbuch
 --------
@@ -69,6 +68,8 @@ Kochbuch
 
         cookbook/*
 
+.. _index_reference:
+
 Referenz
 --------
 
@@ -78,7 +79,4 @@ Referenz
 
         reference/index
         imprint/index
-
-.. _index_cookbook:
-
 

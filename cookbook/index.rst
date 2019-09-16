@@ -1,4 +1,4 @@
-.. _rst_cookbook:
+.. _index_cookbook:
 
 DCG "Kochbuch"
 ==============
