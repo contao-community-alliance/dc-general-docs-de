@@ -9,7 +9,7 @@ Konfiguration des DCA erstellt.
 Als erster Punkt wird im Knoten ``config`` der Data-Container auf den 
 DCG per ``General`` umgestellt.
 
-.. code-block:: yaml
+.. code-block:: php
 
    $GLOBALS['TL_DCA']['tl_my_table'] = array
    (
@@ -43,7 +43,7 @@ die Aufgaben einen entsprechenden Event-Listener zu übergeben (siehe
 Der Standard-Datenprovider (Datentabelle) wird Knoten ``data_provider``
 in ``data_provider`` angegeben.
 
-.. code-block:: yaml
+.. code-block:: php
 
    $GLOBALS['TL_DCA']['tl_my_table'] = array
    (
@@ -64,7 +64,7 @@ in ``data_provider`` angegeben.
 Gibt es Kindtabellen, werden ebenfalls diese im Knoten ``data_provider`` angegeben -
 beim DC_Table würde das in ``ctable`` erfolgen.
 
-.. code-block:: yaml
+.. code-block:: php
 
    $GLOBALS['TL_DCA']['tl_my_table'] = array
    (
@@ -91,7 +91,7 @@ auch alle Kind-Datensätze gelöscht.
 Die Beziehung zwischen einer Kind- zur Eltern-Tabelle wird in den ``childCondition``
 definiert.
 
-.. code-block:: yaml
+.. code-block:: php
 
    $GLOBALS['TL_DCA']['tl_my_table'] = array
    (
@@ -149,7 +149,7 @@ Die Konfiguration für eine Kindtabelle ist analog der Elterntabelle.
 Beim ``data_provider`` wird statt ``default`` die Tabelle für ``parent``
 angegeben.
 
-.. code-block:: yaml
+.. code-block:: php
 
    $GLOBALS['TL_DCA']['tl_my_child'] = array
    (

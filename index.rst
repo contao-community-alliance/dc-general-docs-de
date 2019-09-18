@@ -56,6 +56,7 @@ Handbuch
         manual/introduction
         manual/install
         manual/data-container
+        manual/edit-override-all
 
 .. _index_cookbook:
 
