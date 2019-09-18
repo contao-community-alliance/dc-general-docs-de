@@ -4,10 +4,13 @@ Willkommen zu DC_General!
 Dies ist die offizielle Dokumentation des `DC_General <https://github.com/contao-community-alliance/dc-general>`_,
 eine Erweiterung für das `Contao CMS <https://contao.org>`_.
 
-Mit der Erweiterung DC_General ist eine Alternative für den im Contao-Core enthaltenen DC_Table. Der
+Das Handbuch richtet sich an Entwickler, die Erweiterungen für `Contao <https://contao.org>`_
+programmieren oder bestehende Erweiterungen auf Basis des DC_General anpassen möchten.
+
+Die Erweiterung DC_General ist eine Alternative für den im Contao-Core enthaltenen DC_Table. Der
 `DC_Table <https://github.com/contao/core-bundle/blob/master/src/Resources/contao/drivers/DC_Table.php>`_
 ist als "Driver" in erster Linie für die Datenmanipulation wie z.B. Datensatz speichern, kopieren und
-löschen zuständig - zudem ist im DC_Table auch das Mehrfachbearbeiten implementiert. Weiterhin kümmert
+löschen zuständig - zudem ist im DC_Table auch das Mehrfachbearbeiten eigenständig implementiert. Weiterhin kümmert
 sich der DC_Table um die Anzeige der Daten im Backend z.B. für die Listenansichten oder die Eingabemasken.
 
 Der aktuelle DC_Table ist im Verlauf seiner Entwicklung zu einem
