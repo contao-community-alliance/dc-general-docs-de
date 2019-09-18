@@ -3,14 +3,14 @@ _introdution_dcg:
 Vorstellung des DCG
 ===================
 
-Das Handbuch richtet sich an Entwickler, die Erweiterungen für `Contao <https://contao.org>`_
-programmieren oder bestehende Erweiterungen auf Basis des DC_General anpassen möchten.
+Das Handbuch richtet sich an Entwickler, die Erweiterungen fÃ¼r `Contao <https://contao.org>`_
+programmieren oder bestehende Erweiterungen auf Basis des DC_General anpassen mÃ¶chten.
 
-Die Erweiterung DC_General ist eine Alternative für den im Contao-Core enthaltenen DC_Table. Der
+Die Erweiterung DC_General ist eine Alternative fÃ¼r den im Contao-Core enthaltenen DC_Table. Der
 `DC_Table <https://github.com/contao/core-bundle/blob/master/src/Resources/contao/drivers/DC_Table.php>`_
-ist als "Driver" in erster Linie für die Datenmanipulation wie z.B. Datensatz speichern, kopieren und
-löschen zuständig - zudem ist im DC_Table auch das Mehrfachbearbeiten eigenständig implementiert. Weiterhin kümmert
-sich der DC_Table um die Anzeige der Daten im Backend z.B. für die Listenansichten oder die Eingabemasken.
+ist als "Driver" in erster Linie fÃ¼r die Datenmanipulation wie z.B. Datensatz speichern, kopieren und
+lÃ¶schen zustÃ¤ndig - zudem ist im DC_Table auch das Mehrfachbearbeiten eigenstÃ¤ndig implementiert. Weiterhin kÃ¼mmert
+sich der DC_Table um die Anzeige der Daten im Backend z.B. fÃ¼r die Listenansichten oder die Eingabemasken.
 
 .. _introdution_was-ist-dcg:
 
@@ -23,6 +23,19 @@ Was ist der DCG?
 
 Der DCG im Vergleich zum DC_Table
 ---------------------------------
+
+Der DCG hat im Vergleich zum DC_Table folgende Vorteile:
+
+* Event Driven
+* Objektbasierte Abstraktion der Definitionen
+* Abstraktion der Datenquelle
+* Verbesserte Konfiguration der AbhÃ¤ngigkeiten zwischen Datacontainers
+* modularer Aufbau
+* Deep-Delete ohne anladen der referenzierten Datacontainer, mehr VariabilitÃ¤t
+  da nicht abhÃ¤ngig von ptable-Bezug
+
+Der DCG unterstÃ¼tzt alle :ref:`Callback-Aufrufe <reference_callbacks>` von Contao und
+leitet diese in die eigenen Events um.
 
 
 Ressourcen
