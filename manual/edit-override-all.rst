@@ -6,7 +6,7 @@ Mehrfachbearbeitung (edit/overrideAll)
 Der DCG bringt eine eigene Mehrfachbearbeitung mit, welche einen
 erweiterten Funktionsumfang gegenüber der Standardmethode von
 Contao hat. Die Mehrfachbearbeitung wird automatisch mit der
-Definition `general`im DCA aktiviert (siehe :ref:`manual_data-container`).
+Definition `general` im DCA aktiviert (siehe :ref:`manual_data-container`).
 
 Die Vorteile sind:
 
