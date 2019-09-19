@@ -10,6 +10,12 @@ In die Auflistung können gern interessante oder ungewöhnliche Lösungen
 aufgenommen werden - bitte eigene "Rezepte" oder Links zum Forum bzw.
 andere Webseiten an die folgende E-Mail senden: |manual@metamodel.me|
 
+    .. toctree::
+        :maxdepth: 1
+
+        inputmask-without-table
+
+
 .. _manual@metamodel.me: manual\@metamodel.me?Subject=Mein%20Rezept%20f%FCr%20das%20DCG-Kochbuch&Body=Mein%20Rezept%3A%0A
 
 .. |manual@metamodel.me| raw:: html
