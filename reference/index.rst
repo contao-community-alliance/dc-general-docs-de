@@ -11,5 +11,5 @@ Die Referenzen sind für Entwickler gedacht, die Funktionen aus dem DCG nutzen m
         api
         events
         callbacks
-        legacy_dca
+        dca_mapping
 
